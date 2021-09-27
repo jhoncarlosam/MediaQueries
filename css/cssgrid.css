@@ -176,7 +176,7 @@
     color: var(--red);
     text-decoration: none;
   }
-  @media screen and (min-width: 1330px) {
+  @media screen and (min-width: 1300px) {
     .product--cards-container {
       display: flex;
       flex-wrap: wrap;
