@@ -1,0 +1,35 @@
+::selection {
+    background-color: #eb770b;
+    color: #000000;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+.header {
+    background-color: #F4D19B;
+}
+.main {
+    background-color: FDFCE5;
+}
+.footer {
+    background-color: #F9F3DF;
+}
+li {
+    list-style: none;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+p {
+    padding: 1rem 0;
+}

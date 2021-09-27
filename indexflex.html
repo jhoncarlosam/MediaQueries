@@ -1,12 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/flexblox.css" />
+  </head>
+  <body class=".body"> <!--CONTAINER FLEX-->
+    <header class="header">
+      <nav class="nav">
+        <ul> <!--CONTAINER FLEX-->
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main"><!--CONTAINER FLEX-->
+      <section class="main__title"><!--CONTAINER FLEX-->
+        <h1>¿Qué es Flexbox?</h1>
+      </section>
+      <section class="card__text-image">
+        <!--Two columns-->
+        <article class="card__text">
+          <p>
+            Dado que flexbox es un módulo completo y no una sola propiedad,
+            implica un montón de cosas, incluyendo todo su conjunto de
+            propiedades. Algunas de ellas están destinadas a ser establecidas en
+            el contenedor (elemento padre, conocido como "contenedor flex")
+            mientras que las otras están destinadas a ser establecidas en los
+            hijos (llamados "elementos flex"). Si la maquetación "normal" se
+            basa en las direcciones de flujo en bloque y en línea, la
+            maquetación flexible se basa en las "direcciones de flujo
+            flexibles". Consulte esta figura de la especificación, en la que se
+            explica la idea principal de la maquetación flexible.
+          </p>
+        </article>
+        <article class="card__img">
+          <img
+            src="https://css-tricks.com/wp-content/uploads/2018/11/00-basic-terminology.svg"
+            alt="Terminología básica de un contenedor Flexbox."
+          />
+        </article>
+      </section>
+      <section class="card__text-image"><!--CONTAINER FLEX-->
+        <!--One column-->
+        <article class="card__text article">
+          <p>
+            Los elementos se colocarán siguiendo el eje principal (desde el inicio principal hasta el final principal) o el eje transversal (desde el inicio transversal hasta el final transversal). eje principal - El eje principal de un contenedor flexible es el eje principal a lo largo del cual se colocan los elementos flexibles. Cuidado, no es necesariamente horizontal; depende de la propiedad flex-dirección (ver más abajo). main-start | main-end - Los elementos flex se colocan dentro del contenedor empezando por main-start y yendo hasta main-end. main size - La anchura o la altura de un elemento flex, lo que esté en la dimensión principal, es el tamaño principal del elemento. La propiedad de tamaño principal del elemento flexible es la propiedad "anchura" o "altura", según la dimensión principal. eje transversal - El eje perpendicular al eje principal se llama eje transversal.
+          </p>
+          <p> Su dirección depende de la dirección del eje principal. inicio cruzado | final cruzado - Las líneas flexibles se llenan de elementos y se colocan en el contenedor empezando por el lado de inicio cruzado del contenedor flexible y yendo hacia el lado de final cruzado. tamaño cruzado - La anchura o la altura de un elemento flexible, cualquiera que sea la dimensión cruzada, es el tamaño cruzado del elemento. La propiedad de tamaño transversal es la que se encuentra en la dimensión transversal de 'anchura' o 'altura'.</p>
+        </article>
+      </section>
+    </main>
+    <footer class="footer"><!--CONTAINER FLEX-->
+        <!--Two columns-->
+      <section class="footer__section--left">
+        <ul>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ul>
+      </section>
+      <section class="footer__section--right">
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </section>
+    </footer>
+  </body>
 </html>
