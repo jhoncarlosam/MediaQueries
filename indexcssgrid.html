@@ -6,49 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <title>CSS grid</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/cssgrid.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <div class="container">
+        <header class="header__container">  
+            <div class="box">
+                <h1>Blog Institucional UFPS.</h1>
+                <p>Por estudiantes con sentido de pertenencia.</p>
+            </div>
+        </header>
+        <main id="main">
+            <section class="product--cards-container">
+                <article class="product--detail-card">
+                    <h2 id="mission" class="product--card-title">Misión</h2>
+                    <p class="product--card-body">
+                        La Universidad Francisco de Paula Santander es una Institución Pública de Educación Superior, orientada al mejoramiento continuo y la calidad en los procesos de docencia, investigación y extensión, en el marco de estrategias metodológicas presenciales, a distancia y virtuales, cuyo propósito fundamental es la formación integral de profesionales comprometidos con la solución de problemas del entorno, en busca del desarrollo sostenible de la región.
+                    </p>
+                </article>
+                <article class="product--detail-card">
+                    <h2 id="vission" class="product--card-title">Visión</h2>
+                    <p class="product--card-body">
+                        En el año 2025, seremos una universidad acreditada de alta calidad, reconocida por la excelencia y eficiencia en el ejercicio de las funciones misionales con enfoque glocal, situando en valor las potencialidades de la comunidad universitaria y participando en los cambios del entorno mediante la transferencia del conocimiento y la innovación; aportando al desarrollo sostenible de la sociedad.
+                    </p>
+                </article>
+                <article class="product--detail-card">
+                    <h2 id="vission" class="product--card-title">¿Deseas agregar un artículo al blog?</h2>
+                    <p class="product--card-body">
+                        Envía un mensaje a nuestro grupo de telegram: <a href="https://t.me/joinchat/FCr7U05VJ8QyYTYx" target="_blank" rel="noopener noreferrer">Blog UFPS</a>
+                    </p>
+                </article>
+            </section>
+        </main>
+        <div id="sidebar" class="sidebar">
+            <h2>Contenido</h2>
             <ul>
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>Blog</li>
-                <li><a href=""></a>Contact</li>
+                <li><a href="#mission">Misión</a></li>
+                <li><a href="#vission">Visión</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <article>
-                <h2></h2>
-                <p></p>
-            </article>
-            <article>
-                <h2></h2>
-                <p></p>
-            </article>
-        </section>
-        <section>
-            <article>
-                <h2></h2>
-                <p></p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <section>
-            <ul>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Facebook</a></li>
-            </ul>
-        </section>
-        <section>
-            <ul>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">TikTok</a></li>
-            </ul>
-        </section>
-    </footer>
+        </div>
+        <footer>
+            <section class="left">
+                <ul>
+                    <li><a href="https://ww2.ufps.edu.co/" target="_blank" rel="noopener noreferrer">PORTAL UFPS</a></li>
+                </ul>
+            </section>
+            <section class="right">
+                <img src="https://raw.githubusercontent.com/jhoncarlosam/Blog-ufps/main/assets/logoufps.png" alt="Logo UFPS">
+            </section>
+        </footer>
+    </div>
 </body>
 </html>

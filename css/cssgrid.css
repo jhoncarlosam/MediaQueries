@@ -1,0 +1,200 @@
+:root {
+    --red: #db4d4d;
+    --red-fury: #ed5127;
+    --red-orange: #ed553c;
+    --only-black: #111111;
+    --black: #201e1c;
+    --warm-black: #282623;
+    --just-white: #ffffff;
+    --awesome-yellow: #f29121;
+    --yellow: #f4cd29;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+    font-family: 'Playfair Display', serif;
+  }
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar main main main"
+    "sidebar footer footer footer";
+    grid-gap: 0.2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #111111;
+    text-align: center;
+  }
+  header {
+    grid-area: nav; 
+  }
+  .header__container {
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+  
+    background-image: url('https://raw.githubusercontent.com/jhoncarlosam/Blog-ufps/main/assets/smile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .header__container h1 {
+    font-size: 3.4rem;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    line-height: 2.6rem;
+    text-shadow: -4px 3px 0 var(--only-black);
+    color: var(--just-white);
+  }
+  .box {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+    font-family: sans-serif;
+    line-height: 1;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .header__container p {
+    color: var(--just-white);
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  main {
+    background: var(--just-white);
+    grid-area: main;
+  }
+  
+  .product--detail-card {
+    background-color: #faf8f7;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    min-width: 288px;
+    margin: 55px auto;
+    max-width: 400px;
+    min-height: 150px;
+    padding: 15px;
+    width: 70%;
+  }
+  .product--card-title {
+    color: var(--only-black);
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    margin-bottom: 15px;
+  }
+  .product--card-body {
+    font-size: 2rem;
+    line-height: 2.6rem;
+    font-weight: 500;
+    text-align: justify;
+    /* color: #808080; */
+  }
+  
+  #sidebar {
+    background-color: var(--warm-black);
+    border-radius: 4px;
+    grid-area: sidebar;
+    height: 100%;
+    min-height: 200px;
+    width: 100%;
+  }
+  #sidebar h2 {
+    color: var(--just-white);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 3rem;
+  }
+  #sidebar ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+    padding-top: 2rem;
+  }
+  #sidebar li {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+  #sidebar a {
+    color:var(--just-white);
+    text-decoration: none;
+  }
+  footer {
+    grid-area: footer;
+  }
+  footer {
+    background-color: var(--red);
+    border-radius: 4px;
+    display: flex;
+    height: 150px;
+    width: 100%;
+  }
+  footer section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+  }
+  .left li {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  .left a {
+    color:var(--just-white);
+    text-decoration: none;
+  }
+  .right img {
+    border: 1px solid var(--just-white);
+    border-radius: .1rem;
+    width: 20%;
+  }
+  a {
+    color: var(--red);
+    text-decoration: none;
+  }
+  @media screen and (min-width: 1440px) {
+    .product--cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 930px;
+      margin: 0 auto;
+    }
+    .header__container {
+      background-image: url('https://raw.githubusercontent.com/jhoncarlosam/Blog-ufps/main/assets/smilex2.jpg');
+    }
+  }
+  @media only screen and (max-width: 550px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.4fr 0.4fr 2.2fr 1fr;
+      grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "footer";
+    }
+  }
